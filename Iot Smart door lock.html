@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-Based Smart Door System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0,0,0,0.3);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>IoT-Based Smart Door</h1>
+        <p>Secure, Automated, and Intelligent Access Control</p>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Project Overview</h2>
+            <p>
+                The IoT-Based Smart Door System is a modern solution for home and office security.
+                It integrates IoT technology to enable remote door control, real-time monitoring,
+                and advanced authentication methods like RFID and face recognition.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔒 Secure Access</h3>
+                    <p>Only authorized users can unlock the door using RFID or mobile app authentication.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Remote Control</h3>
+                    <p>Lock and unlock your door from anywhere using a secure web dashboard or mobile app.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📷 Camera Integration</h3>
+                    <p>Capture images of visitors and store them in the cloud for security records.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🌐 IoT Connectivity</h3>
+                    <p>Real-time door status updates and notifications directly on your phone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technology Stack</h2>
+            <ul>
+                <li>ESP32 Microcontroller</li>
+                <li>RFID Module for authentication</li>
+                <li>Servo Motor for lock mechanism</li>
+                <li>Camera module for image capture</li>
+                <li>Firebase Cloud for data storage</li>
+                <li>HTML, CSS, JavaScript for UI</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Working Demo</h2>
+            <p>Below is a sample video/demo of the IoT Smart Door in action:</p>
+            <video width="100%" controls>
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 IoT Smart Door Project | Designed by Ashi Jain
+    </footer>
+
+</body>
+</html>

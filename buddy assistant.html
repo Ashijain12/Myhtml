@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Voice Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .assistant-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        textarea {
+            flex: 1;
+            height: 60px;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .mic-btn {
+            background: #ff4b2b;
+            border: none;
+            border-radius: 50%;
+            padding: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .mic-btn img {
+            width: 30px;
+        }
+
+        .mic-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .output-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .assistant-box, .output-box {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎤 Buddy Voice Assistant</h1>
+        <p>Your personal voice-powered AI helper</p>
+    </header>
+
+    <main>
+        <div class="assistant-box">
+            <textarea placeholder="Say something or type your command..."></textarea>
+            <button class="mic-btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABKklEQVRIS+3WvQ3CMAyF4a+gIAYQNgEmoQMS4AASM4AC6AkJrgElMk1qOnSuVv2TkSC+9c9K/3xz+0+EAEuW0H9pgAG4wAE5MIEXpsKpAv8G1sIuGfFAs1KiC9TbSNRiNFKpoSuIsNMcDP5gDspGSpH9kQhL1gyxo5XH6bBmf6xCFDGK5G0ItBdfEGZrJEVApfsgD6INoB14ndANbdGVWzQSaEXtwjJqzhN8lMHi5xflTBCd+hGgrD4mhONRIuOYdBIbtKuPEAXfwAIdD/JGGyJ3tMPYq5QgH+1FhQpUMJPtAAAAAElFTkSuQmCC" alt="Mic">
+            </button>
+        </div>
+
+        <div class="output-box">
+            <h2>Response:</h2>
+            <p id="output-text">Your assistant's reply will appear here...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by Ashi Jain</p>
+    </footer>
+</body>
+</html>
